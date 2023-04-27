@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "silly-pigeons",
+	"version": "1",
+	"name": "Silly Pigeons",
+	"description": "Adds pigeons to Minecraft!",
+	"authors": [
+		"JesseKind",
+		"xEmii"
+	],
+	"contact": {
+		"homepage": "https://twitter.com/kind_jesse/",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/silly-pigeons/chonky-pigeon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"jessekind.silly.pigeons.SillyPigeons"
+		],
+		"client": [
+			"jessekind.silly.pigeons.SillyPigeonsClient"
+		]
+	},
+	"mixins": [
+		"silly-pigeons.mixins.json",
+		{
+			"config": "silly-pigeons.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"geckolib": ">=4.1.1",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
