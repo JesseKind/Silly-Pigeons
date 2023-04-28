@@ -7,7 +7,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
     protected ModLootTableGenerator(FabricDataOutput dataOutput) {
         super(dataOutput);
-       
     }
 
     @Override

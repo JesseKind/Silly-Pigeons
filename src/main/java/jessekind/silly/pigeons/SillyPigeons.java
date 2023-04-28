@@ -20,7 +20,6 @@ public class SillyPigeons implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
-		ModItems.addItemsToItemGroup();
 		FabricDefaultAttributeRegistry.register(ModEntities.CITY_PIGEON, CityPigeonEntity.setAttributes());
 	}
 	

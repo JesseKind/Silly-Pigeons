@@ -21,14 +21,13 @@
 		],
 		"client": [
 			"jessekind.silly.pigeons.SillyPigeonsClient"
+		],
+		"fabric-datagen": [
+			"jessekind.silly.pigeons.SillyPigeonsDataGenerator"
 		]
 	},
 	"mixins": [
-		"silly-pigeons.mixins.json",
-		{
-			"config": "silly-pigeons.client.mixins.json",
-			"environment": "client"
-		}
+		"silly-pigeons.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.19",

@@ -1,5 +1,6 @@
 package jessekind.silly.pigeons.entity.client;
 
+
 import jessekind.silly.pigeons.SillyPigeons;
 import jessekind.silly.pigeons.entity.custom.CityPigeonEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
