@@ -1,15 +1,21 @@
 {
     "type": "minecraft:entity",
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "silly-pigeons:pigeon_feather"
-                }
-            ]
-
-        }
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 99,
+            "name": "silly-pigeons:pigeon_feather"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:diamond"
+          }
+        ]
+      }
     ]
-}
+  }
+  
