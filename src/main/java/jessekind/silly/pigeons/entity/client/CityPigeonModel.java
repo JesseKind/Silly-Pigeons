@@ -17,24 +17,28 @@ public class CityPigeonModel extends GeoModel<CityPigeonEntity>{
         return new Identifier(SillyPigeons.MOD_ID, "geo/city-pigeon-geo.json");
     }
 
+    // @Override
+    // public Identifier getTextureResource(CityPigeonEntity animatable) {
+    //     return new Identifier(SillyPigeons.MOD_ID, "textures/entity/city-pigeon-texture.png");
+    // }
+
     @Override
-    public Identifier getTextureResource(CityPigeonEntity animatable) {
-        return new Identifier(SillyPigeons.MOD_ID, "textures/entity/city-pigeon-texture.png");
+    public Identifier getTextureResource(CityPigeonEntity object) {
+        return CityPigeonRenderer.LOCATION_BY_VARIANT.get(object.getVariant());
     }
 
     @Override
     public Identifier getAnimationResource(CityPigeonEntity animatable) {
         return new Identifier(SillyPigeons.MOD_ID, "animations/city-pigeon-animation.json");
     }
-public void setCustomAnimations(CityPigeonEntity animatable, long instanceId, AnimationState<CityPigeonEntity> animationState){
+
+    public void setCustomAnimations(CityPigeonEntity animatable, long instanceId, AnimationState<CityPigeonEntity> animationState){
     CoreGeoBone head = getAnimationProcessor().getBone("head");
 
-    if (head != null){
-        EntityModelData entityData = animationState.getData(DataTickets.ENTITY_MODEL_DATA);
-        head.setRotX(entityData.headPitch() * MathHelper.RADIANS_PER_DEGREE);
-        head.setRotY(entityData.netHeadYaw() * MathHelper.RADIANS_PER_DEGREE);
+        if (head != null){
+            EntityModelData entityData = animationState.getData(DataTickets.ENTITY_MODEL_DATA);
+            head.setRotX(entityData.headPitch() * MathHelper.RADIANS_PER_DEGREE);
+            head.setRotY(entityData.netHeadYaw() * MathHelper.RADIANS_PER_DEGREE);
+        }
     }
-}
-
-    
 }
