@@ -2,6 +2,7 @@ package jessekind.silly.pigeons.entity;
 
 import jessekind.silly.pigeons.SillyPigeons;
 import jessekind.silly.pigeons.entity.custom.CityPigeonEntity;
+import jessekind.silly.pigeons.entity.projectile.thrown.PigeonEggEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -16,4 +17,9 @@ public class ModEntities {
     // Makes a new entity type for the City Pigeon, edit hitbox size here
     public static final EntityType<CityPigeonEntity> CITY_PIGEON = Registry.register(Registries.ENTITY_TYPE, new Identifier(SillyPigeons.MOD_ID,"city_pigeon"),
     FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CityPigeonEntity::new).dimensions(EntityDimensions.fixed(0.4f, 0.5f)).build());
+    
+    public static final EntityType<PigeonEggEntity> PIGEON_EGG = Registry.register(Registries.ENTITY_TYPE, 
+        new Identifier(SillyPigeons.MOD_ID,"pigeon_egg"),
+        FabricEntityTypeBuilder.<PigeonEggEntity>create(SpawnGroup.MISC, PigeonEggEntity::new)
+            .build());
 }

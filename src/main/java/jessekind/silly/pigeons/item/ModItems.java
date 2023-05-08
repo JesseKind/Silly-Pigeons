@@ -2,6 +2,7 @@ package jessekind.silly.pigeons.item;
 
 import jessekind.silly.pigeons.SillyPigeons;
 import jessekind.silly.pigeons.entity.ModEntities;
+import jessekind.silly.pigeons.item.custom.PigeonEggItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -17,7 +18,7 @@ public class ModItems {
     public static final Item PIGEON_FEATHER = registerItem("pigeon_feather",
         new Item(new FabricItemSettings()));
     public static final Item PIGEON_EGG = registerItem("pigeon_egg",
-        new Item(new FabricItemSettings()));
+        new PigeonEggItem(new FabricItemSettings()));
     public static final Item CITY_PIGEON_SPAWN_EGG = registerItem("city_pigeon_spawn_egg",
         new SpawnEggItem(ModEntities.CITY_PIGEON, 0xffffff, 0x6a608c, new FabricItemSettings()));
 
