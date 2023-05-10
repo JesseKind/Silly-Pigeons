@@ -1,7 +1,6 @@
 package jessekind.silly.pigeons.entity.projectile.thrown;
 
 import jessekind.silly.pigeons.entity.ModEntities;
-import jessekind.silly.pigeons.entity.custom.CityPigeonEntity;
 import jessekind.silly.pigeons.item.ModItems;
 import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
