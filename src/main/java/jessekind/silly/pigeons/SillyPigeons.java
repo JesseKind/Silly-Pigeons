@@ -4,6 +4,8 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import jessekind.silly.pigeons.block.ModBlocks;
 import jessekind.silly.pigeons.entity.ModEntities;
 import jessekind.silly.pigeons.entity.custom.CityPigeonEntity;
 import jessekind.silly.pigeons.item.ModItemGroup;
@@ -20,6 +22,7 @@ public class SillyPigeons implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		FabricDefaultAttributeRegistry.register(ModEntities.CITY_PIGEON, CityPigeonEntity.setAttributes());
 	}
 	

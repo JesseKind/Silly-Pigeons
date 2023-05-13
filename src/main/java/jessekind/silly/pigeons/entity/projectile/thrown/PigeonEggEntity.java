@@ -30,7 +30,6 @@ public class PigeonEggEntity extends ThrownItemEntity {
     @Override
     public void handleStatus(byte status) {
         if (status == EntityStatuses.PLAY_DEATH_SOUND_OR_ADD_PROJECTILE_HIT_PARTICLES) {
-            double d = 0.08;
             for (int i = 0; i < 8; ++i) {
                 this.world.addParticle(new ItemStackParticleEffect(ParticleTypes.ITEM, this.getStack()), this.getX(), this.getY(), this.getZ(), ((double)this.random.nextFloat() - 0.5) * 0.08, ((double)this.random.nextFloat() - 0.5) * 0.08, ((double)this.random.nextFloat() - 0.5) * 0.08);
             }
@@ -55,7 +54,5 @@ public class PigeonEggEntity extends ThrownItemEntity {
     @Override
     protected Item getDefaultItem() {
         return ModItems.PIGEON_EGG;
-    }
-    
+    } 
 }
-
