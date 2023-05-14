@@ -1,5 +1,8 @@
 {
     "variants": {
-        "": { "model": "silly-pigeons:block/pigeon_nest" }
+        "facing=north": { "model": "silly-pigeons:block/pigeon_nest" },
+        "facing=east": { "model": "silly-pigeons:block/pigeon_nest", "y": 90 },
+        "facing=south": { "model": "silly-pigeons:block/pigeon_nest", "y": 180 },
+        "facing=west": { "model": "silly-pigeons:block/pigeon_nest", "y": 270 }
     }
 }

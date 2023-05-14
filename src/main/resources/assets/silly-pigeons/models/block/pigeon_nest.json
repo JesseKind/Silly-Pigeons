@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "pigeon_nest",
-		"particle": "pigeon_nest"
+		"0": "silly-pigeons:block/pigeon_nest",
+		"particle": "silly-pigeons:block/pigeon_nest"
 	},
 	"elements": [
 		{

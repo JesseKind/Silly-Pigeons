@@ -1,6 +1,7 @@
 package jessekind.silly.pigeons.block;
 
 import jessekind.silly.pigeons.SillyPigeons;
+import jessekind.silly.pigeons.block.custom.PigeonNest;
 import jessekind.silly.pigeons.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -18,7 +19,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block PIGEON_NEST = registerBlock("pigeon_nest",
-        new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS)), ModItemGroup.SILLY_PIGEONS);
+        new PigeonNest(FabricBlockSettings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS)), ModItemGroup.SILLY_PIGEONS);
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);
