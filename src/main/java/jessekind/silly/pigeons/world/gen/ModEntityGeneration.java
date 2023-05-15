@@ -12,8 +12,8 @@ import net.minecraft.world.biome.BiomeKeys;
 
 public class ModEntityGeneration {
     public static void addSpawns() {
-        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST, BiomeKeys.BIRCH_FOREST), SpawnGroup.CREATURE,
-            ModEntities.CITY_PIGEON, 35, 1, 3);
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST, BiomeKeys.BIRCH_FOREST, BiomeKeys.MEADOW, BiomeKeys.TAIGA), SpawnGroup.CREATURE,
+            ModEntities.CITY_PIGEON, 35, 2, 4);
 
         SpawnRestriction.register(ModEntities.CITY_PIGEON, SpawnRestriction.Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING, AnimalEntity::isValidNaturalSpawn);
     }
