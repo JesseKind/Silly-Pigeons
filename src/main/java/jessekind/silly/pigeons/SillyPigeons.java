@@ -10,6 +10,7 @@ import jessekind.silly.pigeons.entity.ModEntities;
 import jessekind.silly.pigeons.entity.custom.CityPigeonEntity;
 import jessekind.silly.pigeons.item.ModItemGroup;
 import jessekind.silly.pigeons.item.ModItems;
+import jessekind.silly.pigeons.world.gen.ModWorldGeneration;
 
 public class SillyPigeons implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -23,7 +24,8 @@ public class SillyPigeons implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
+
 		FabricDefaultAttributeRegistry.register(ModEntities.CITY_PIGEON, CityPigeonEntity.setAttributes());
 	}
-	
 }
